@@ -29,7 +29,7 @@ public class SearchService {
         SearchSession searchSession = Search.session(em);
         SearchResult<Newsroom> result = searchSession.search(Newsroom.class)
                 .where(f -> f.match()
-                        .field("content")
+                        .fields("title", "content")
                         .matching(keyword))
                 .fetchAll();
 

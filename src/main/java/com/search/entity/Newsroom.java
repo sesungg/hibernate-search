@@ -15,10 +15,10 @@ public class Newsroom {
 
     private String link;
 
-    @FullTextField(analyzer = "koreanAnalyzer", searchAnalyzer = "koreanAnalyzer")
+    @FullTextField(analyzer = "koreanAnalyzer")
     private String title;
 
-    @FullTextField(analyzer = "koreanAnalyzer", searchAnalyzer = "koreanAnalyzer")
+    @FullTextField(analyzer = "koreanAnalyzer")
     private String content;
 
     public Long getNewsroomNo() {
